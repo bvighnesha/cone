@@ -1,6 +1,5 @@
 package io.cone;
 
-import io.quarkus.test.common.QuarkusTestResource;
 import io.quarkus.test.common.http.TestHTTPEndpoint;
 import io.quarkus.test.junit.QuarkusTest;
 import io.quarkus.test.junit.mockito.InjectMock;
@@ -24,9 +23,7 @@ public class RegistrationResourceTest {
     public void shouldNotAddAUserIfBannedName() {
         Mockito.when(bannedUserClient.isBanned("Alex")).thenReturn("false");
 
-        final User user = new User();
-        user.username = "Alex";
-        user.email = "asotobu@example.com";
+        User user = new User("Alex", "asotobu@example.com");
 
         given()
                 .body(user)

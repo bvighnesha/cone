@@ -1,8 +1,7 @@
 package io.cone;
 
-public class User {
-    String username;
-    String email;
-    String id;
-    String password;
+import jakarta.enterprise.context.ApplicationScoped;
+
+public record User(String username,
+        String email) {
 }

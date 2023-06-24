@@ -19,7 +19,7 @@ public class RegistrationResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response insertUser(User user) {
 
-        if (Boolean.valueOf(bannedUserService.isBanned(user.username))) {
+        if (Boolean.valueOf(bannedUserService.isBanned(user.username()))) {
             return Response.status(Response.Status.PRECONDITION_FAILED.getStatusCode())
                     .build();
         } else {
