@@ -21,14 +21,14 @@ public class RegistrationResourceTest {
 
     @Test
     public void shouldNotAddAUserIfBannedName() {
-        Mockito.when(bannedUserClient.isBanned("Alex")).thenReturn("false");
+        Mockito.when(bannedUserClient.isBanned("Alex")).thenReturn("true");
 
         User user = new User("Alex", "asotobu@example.com");
 
         given()
                 .body(user)
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
-                .header(HttpHeaders.ACCEPT, MediaType.APPLICATION_JSON)
+                .header(HttpHeaders.ACCEPT, MediaType.TEXT_PLAIN)
                 .when().post()
                 .then()
                 .statusCode(Response.Status.PRECONDITION_FAILED.getStatusCode());

@@ -9,7 +9,7 @@ import jakarta.ws.rs.core.MediaType;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 @Path("/api")
-@RegisterRestClient(baseUri = "/")
+@RegisterRestClient()
 @ApplicationScoped
 public interface BannedUserClient {
     @GET
