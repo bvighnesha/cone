@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="io.cone.RegistrationResourceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-24T10:40:17" hostname="Vighneshas-MacBook-Pro.local" time="0.599">
+<testsuite name="io.cone.RegistrationResourceTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-06-24T10:56:17" hostname="Vighneshas-MacBook-Pro.local" time="0.574">
   <properties/>
-  <testcase name="shouldNotAddAUserIfBannedName()" classname="io.cone.RegistrationResourceTest" time="0.599">
+  <testcase name="shouldNotAddAUserIfBannedName()" classname="io.cone.RegistrationResourceTest" time="0.574">
     <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;412&gt; but was &lt;415&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
 Expected status code &lt;412&gt; but was &lt;415&gt;.
 
@@ -129,10 +129,10 @@ Expected status code &lt;412&gt; but was &lt;415&gt;.
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[2023-06-24 16:10:17,061 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-4) Quarkus detected the use of JSON in JAX-RS method 'io.cone.RegistrationResource#insertUser' but no JSON extension has been added. Consider adding 'quarkus-resteasy-reactive-jackson' or 'quarkus-resteasy-reactive-jsonb'.
-2023-06-24 16:10:17,557 INFO  [io.quarkus] (Test worker) cone 1.0-SNAPSHOT on JVM (powered by Quarkus 3.1.2.Final) started in 1.107s. Listening on: http://localhost:8081
-2023-06-24 16:10:17,557 INFO  [io.quarkus] (Test worker) Profile test activated. 
-2023-06-24 16:10:17,558 INFO  [io.quarkus] (Test worker) Installed features: [cdi, rest-client, rest-client-jackson, rest-client-reactive, rest-client-reactive-jackson, resteasy-reactive, smallrye-context-propagation, vertx]
+  <system-out><![CDATA[2023-06-24 16:26:16,160 WARN  [io.qua.res.rea.ser.dep.QuarkusServerEndpointIndexer] (build-11) Quarkus detected the use of JSON in JAX-RS method 'io.cone.RegistrationResource#insertUser' but no JSON extension has been added. Consider adding 'quarkus-resteasy-reactive-jackson' or 'quarkus-resteasy-reactive-jsonb'.
+2023-06-24 16:26:16,578 INFO  [io.quarkus] (Test worker) cone 1.0-SNAPSHOT on JVM (powered by Quarkus 3.1.2.Final) started in 1.023s. Listening on: http://localhost:8081
+2023-06-24 16:26:16,579 INFO  [io.quarkus] (Test worker) Profile test activated. 
+2023-06-24 16:26:16,579 INFO  [io.quarkus] (Test worker) Installed features: [cdi, rest-client, rest-client-jackson, rest-client-reactive, rest-client-reactive-jackson, resteasy-reactive, smallrye-context-propagation, vertx]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
